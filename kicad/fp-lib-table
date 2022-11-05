@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Lugs")(type "KiCad")(uri "${KIPRJMOD}/footprints/Lugs.pretty")(options "")(descr ""))
+)

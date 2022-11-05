@@ -1,0 +1,10 @@
+# Ignore backup and temp files
+*~
+\#*#
+\.\#*
+
+# Backup directories
+*-backups
+
+# Cache directory
+fp-info-cache

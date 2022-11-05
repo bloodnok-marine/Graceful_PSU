@@ -1,0 +1,14 @@
+(footprint "pihole" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 620D4996)
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 -7.62 unlocked) (layer "F.SilkS") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp a4eedb30-239b-4609-8904-0a87f53290c1)
+  )
+  (fp_text value "pihole" (at 0 5.08 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 08e25c8a-b32b-4678-a319-3a329ba4c579)
+  )
+  (pad "" thru_hole circle (at 0 0) (size 6 6) (drill 2.75) (layers *.Cu *.Mask) (tstamp fc7e139c-26de-4d5e-9a87-c6ea6037ae95))
+)

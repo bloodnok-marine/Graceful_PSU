@@ -1,0 +1,28 @@
+* General Schottky diode 
+*
+ds 1 2 Schottky
+.model Schottky d (EG=0.69 XTI=2.0)
+
+* General Signal diode 
+*
+d 1 2 Signal
+.model Signal d (IS=35 RS=64 N=1.24 TT=5 CJO=4 M=0.285 VJ=0.6 BV=250)
+
+
+* 5.6V Zener diode
+.model ZD5V6 D (BV=5.6 IBV=17m)
+
+* 6.8V Zener diode
+.model ZD6V8 D (BV=6.8 IBV=17m)
+
+* 2.4V Zener diode
+.model ZD2V4 D (BV=2.4 IBV=17m)
+
+* 1.8V Zener diode
+.model ZD1V8 D (BV=1.8 IBV=17m)
+
+* 1N4148
+.model D1N4148_1 D(Is=2.682n N=1.836 Rs=.5664 Ikf=44.17m Xti=3 Eg=1.11 Cjo=4p
++ M=.3333 Vj=.5 Fc=.5 Isr=1.565n Nr=2 Bv=100 Ibv=100u Tt=11.54n)
+* TELEFUNKEN pid=d1n4148 case=DO35
+* 91-08-20 dsq

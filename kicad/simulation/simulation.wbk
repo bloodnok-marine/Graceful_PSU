@@ -1,0 +1,25 @@
+1
+9
+.tran 1m 70s{return}{return}
+7
+2
+C2
+I
+1
+/Vc1
+V
+1
+/Vc2
+V
+1
+/Vcomp0
+V
+1
+/Vcomp1
+V
+1
+/Vgate
+V
+1
+/Vsw
+V
