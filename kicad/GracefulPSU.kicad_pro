@@ -55,7 +55,43 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|140440001|68685001|376db0b5-1798-476d-8682-d9afe38a86e4|aa9e58c7-0835-4a7f-926d-d0b8c288152a",
+        "courtyards_overlap|140440001|76300001|8e412c54-ba6a-407e-a83d-5ead6863241a|aa9e58c7-0835-4a7f-926d-d0b8c288152a",
+        "courtyards_overlap|140440001|83915001|753e864a-fbc6-489c-8cb9-e27836a02197|aa9e58c7-0835-4a7f-926d-d0b8c288152a",
+        "courtyards_overlap|145520001|63610001|aa9e58c7-0835-4a7f-926d-d0b8c288152a|ec48a936-9ff5-464a-a3aa-fa3272756d43",
+        "silk_overlap|100535000|112756904|4e2657f5-4040-4f49-a6ad-f72393534f73|85dc3f5b-b0ed-431e-9370-d015503e4f36",
+        "silk_overlap|100655000|112756904|4e2657f5-4040-4f49-a6ad-f72393534f73|61798ee2-bc39-4bcb-89e5-ceaf1b6b5e92",
+        "silk_overlap|100760714|112756904|4e2657f5-4040-4f49-a6ad-f72393534f73|d19eae6e-b23b-4243-b8fc-b7cbeaee291c",
+        "silk_overlap|104265476|131045000|c8c6fe26-69fa-40e6-acb3-c2d1a0c83505|010af276-1f7f-4faf-a8a7-9aecb3be827a",
+        "silk_overlap|104295000|131030238|c8c6fe26-69fa-40e6-acb3-c2d1a0c83505|2179093e-894b-4eb7-bcc8-be5ff83edbb0",
+        "silk_overlap|104341666|131006904|c8c6fe26-69fa-40e6-acb3-c2d1a0c83505|e66e74f8-c67e-45e9-8168-4dc9810ab51b",
+        "silk_overlap|106011904|103935000|3adc38d7-3d7c-43ce-8443-d5f61163c959|f485712e-3d1b-4654-be49-33772bc0ed8a",
+        "silk_overlap|106011904|104055000|3cf04942-a6e3-472c-b8aa-2319a9eaabfa|f485712e-3d1b-4654-be49-33772bc0ed8a",
+        "silk_overlap|106011904|104177857|f485712e-3d1b-4654-be49-33772bc0ed8a|a17175a1-1f38-4359-830e-d01662c5df73",
+        "silk_overlap|109656904|74260000|6a773257-13a8-45b4-98dd-743437337cde|ecc7cc96-f5c2-4ff6-96a0-787ebe81a561",
+        "silk_overlap|109923571|74500000|14634bb4-af2b-4ad1-95d6-246a17465131|ecc7cc96-f5c2-4ff6-96a0-787ebe81a561",
+        "silk_overlap|109961666|74380000|287b99f9-0665-49a9-aeda-2ffa1afac296|ecc7cc96-f5c2-4ff6-96a0-787ebe81a561",
+        "silk_overlap|133786904|110455000|d0df00a0-343d-483b-9db0-d66c2b1322ff|c94f1c00-de87-4714-940f-c7e39ce540d5",
+        "silk_overlap|133786904|110528333|d0df00a0-343d-483b-9db0-d66c2b1322ff|271a86a6-ca7c-433a-a32f-794d855648fe",
+        "silk_overlap|133977380|110680714|d0df00a0-343d-483b-9db0-d66c2b1322ff|48ee8b61-5414-4375-9a58-2717fc335eca",
+        "silk_overlap|135882380|133540714|4940a75d-8428-4b62-ae29-04efa259ceb7|ce3744eb-1ff1-4fc5-9e4a-9f14ff7dfc29",
+        "silk_overlap|135882380|133540714|4940a75d-8428-4b62-ae29-04efa259ceb7|d8fdbddc-4f7b-4c68-8491-c39adc262900",
+        "silk_overlap|136491904|133388333|4940a75d-8428-4b62-ae29-04efa259ceb7|540d8fcd-4d62-423d-98d0-e3050bf43d7e",
+        "silk_overlap|138231904|110528333|1f21b2c9-0f49-4fd1-abb1-c008570d4776|9a119f16-95a0-4f77-994e-6d12c65500c9",
+        "silk_overlap|138498571|110642619|1f21b2c9-0f49-4fd1-abb1-c008570d4776|9bb6c07e-5d3b-4e5f-b70c-28de204d3dea",
+        "silk_overlap|138536666|110604523|1f21b2c9-0f49-4fd1-abb1-c008570d4776|43a197db-117a-443f-bac0-f926442ffcb6",
+        "silk_overlap|143715000|131806904|4e05d837-5a5a-4308-9ab0-a1dec7dfbee7|61248410-993f-415c-8b87-aa5bfe8c37c6",
+        "silk_overlap|143835000|131806904|4e05d837-5a5a-4308-9ab0-a1dec7dfbee7|59544367-ba44-4da5-855e-475237d2d2e7",
+        "silk_overlap|143940714|131806904|4e05d837-5a5a-4308-9ab0-a1dec7dfbee7|6239d64d-bbe9-48ba-9e50-f51be7085cb6",
+        "silk_overlap|145990000|114995000|88f808fb-8d86-435d-b325-f97157cc7296|57ab0b8c-368c-4c40-a737-f88a1407bd49",
+        "silk_overlap|145990000|115000000|44bf95bd-ac8c-4346-8394-d20277939a48|57ab0b8c-368c-4c40-a737-f88a1407bd49",
+        "silk_overlap|145990000|64075000|037adaca-fc38-40b5-8085-0e7e8f69934f|6ae01705-b7d0-4e85-8042-5626280484dc",
+        "silk_overlap|146110000|115000000|44bf95bd-ac8c-4346-8394-d20277939a48|8005b08f-ef4b-4a33-b730-9e8f8bd6e3e0",
+        "silk_overlap|146110000|64075000|037adaca-fc38-40b5-8085-0e7e8f69934f|89b1bf60-84ab-42f0-9676-a25385860eaa",
+        "silk_overlap|146110000|64080000|8005b08f-ef4b-4a33-b730-9e8f8bd6e3e0|89b1bf60-84ab-42f0-9676-a25385860eaa",
+        "silk_overlap|146110000|66680000|8005b08f-ef4b-4a33-b730-9e8f8bd6e3e0|16e1069d-8f94-4a9c-9944-2ea6772f7dfd"
+      ],
       "meta": {
         "version": 2
       },
@@ -120,7 +156,8 @@
       },
       "track_widths": [
         0.0,
-        0.25
+        0.25,
+        0.9
       ],
       "via_dimensions": [
         {
@@ -381,14 +418,9 @@
         "name": "Power",
         "nets": [
           "GND",
-          "Net-(C10-Pad2)",
-          "Net-(C11-Pad1)",
+          "Net-(C10-Pad1)",
           "Net-(C4-Pad1)",
-          "Net-(C4-Pad2)",
-          "Net-(C7-Pad1)",
-          "Net-(D1-Pad2)",
-          "Net-(D2-Pad2)",
-          "Net-(J9-Pad1)"
+          "Net-(J10-Pad1)"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",

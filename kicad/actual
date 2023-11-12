@@ -1,0 +1,50 @@
+Notes on prototype wiring
+
+J1 to D2, D4, D6
+D6 to main +ive bus
+
+D2 to R3 (47K)
+R3 to R9 (10K), C3, pin 29
+
+D4 to (secondary +ive bus) ->
+   C2(+), R2 (100K), R16 (330K), J7
+
+C2(-) to D5(+), D8(+), R4 (4.7M), R6 (4.7M)
+R2 to -ive bus
+R16 to U1A pin 2, R17 (470K), R24 (100K)
+R17 to -ive bus
+R24 to D12 +
+
+D5(-) to -ive bus
+D8(-) to D9(-)
+R4 to -ive bus
+R6 to U1B pin 6, R11 (44M)
+
+D9(+) to R10 (47K)
+R10 to U1B pin 7, R11*, D10-
+
++ive bus to R7 (270K)
+R7 to U1B pin 5, R8 (1M), R12 (1M)
+R8 to -ive bus
+R12 to Q1 pin 2, C5(-), R15 (1M)
+
+D10(+) to R13 (10K)
+C5(+) to +ive bus
+R13 to Q1 pin 1, R14 (1M)
+Q1 pin3 to -ive bus
+R14 to -ive bis
+R15 to U1A pin 3, R20 (4.7M)
+
+R20 to U1A pin 1, R19 (10K), J8, (no C6 fitted)
+R19 to J5
+
+D12- to Q2B pin 6, V regulator, power LED (extra), R25, C8(+)
++ive bus to Q3B pin 3, R22 (100K)
+R22 to Q2B pin4, Q2A, pin 8, C7
+
+C7 to J9, D11(+), no R21 fitted
+D11(-) to R26 (100K), R23 (10K), R25 (100K)
+R26 to C8(-), Q2A pin 2
+
+
+

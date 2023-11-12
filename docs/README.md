@@ -8,12 +8,12 @@ enough reserve power to allow a graceful shutdown.
 Raspberry Pi's are marvelous little machines, but their SD cards can
 be damaged if they are being written to when the power fails.
 
-This project provides a Pi or equivalent enough time to safely shut
-doen when input power is removed in order to reduce the risk of SSD
-corruption.
+The author wanted to use a Pi alternative (Libre Computer's Le Potato)
+on his sailboat and needed reliability.
 
-The project contains the circuit designs and software to implement and
-use such a power supply. 
+A power supply that could provide enough reserve power to safely shut
+down the SBC was the answer.  This project contains the circuit designs
+and software to implement and use such a power supply.
 
 ## Directory Overview
 
@@ -24,7 +24,12 @@ project files are in the `kicad` subdirectory.
 
 The `simulation` subdirectory contains a kicad project which simulates
 the Supercapacitor Backup Power, and the Power Control Enable parts of
-the circuit.  
+the circuit.  Note that the simulation uses a bipolar transistor as I
+was unable to get the CSD19505 simulation to work.
+
+This proved good enough to be able to choose component values for the
+final circuit.  Note that the final circuit may have evolved slightly
+from the version in the simulation.
 
 ### Circuit Diagram Image
 
@@ -47,27 +52,15 @@ A description of the circuit can be found in
 
 To follow.
 
-## Licensing
+## License
 
-All software is licensed under V3 of the GPL.  A copy of this license
-is provided in the root directory of this project.
+Everything is licensed under V3 of the GPL.
 
-All electronic circuit schematics and PCB designs are made available
-under the generic Creative Commons Attribution License version 2:
-[https://creativecommons.org/licenses/by/2.0/].
-
-What this means is that you can use the circuits and software freely
-for your own use, but if you distribute it to others you must abide by
-the terms of the licenses.
+What this means is that you can use it freely for your own use, but if
+you distribute it to others you must abide by the terms of the
+license.
 
 Share and Enjoy.
-
-## About Bloodnok Marine
-
-Bloodnok Marine provides free software, circuit schematics and PCB
-designs for various items of marine electronics.  Use them at your own
-risk: there is no warranty provided or implied.
-
 
 
 
