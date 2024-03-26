@@ -33,13 +33,14 @@ readme: README.html
 	xdg-open README.html
 
 clean: tidy
+	@rm *html
 	@echo "Cleanup done"
 
 tidy:
 	@rm -f ${garbage} 2>/dev/null || true
 
 
-# Create html from markdown.  This enables us to test formatting of
+# Create html from markdown.  This enables us to test the formatting of
 # markdown files.
 #
 %.html: %.md

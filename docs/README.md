@@ -24,8 +24,8 @@ project files are in the `kicad` subdirectory.
 
 The `simulation` subdirectory contains a kicad project which simulates
 the Supercapacitor Backup Power, and the Power Control Enable parts of
-the circuit.  Note that the simulation uses a bipolar transistor as I
-was unable to get the CSD19505 simulation to work.
+the circuit.  Note that the simulation uses a bipolar transistor as
+the author was unable to get the CSD19505 simulation to work.
 
 This proved good enough to be able to choose component values for the
 final circuit.  Note that the final circuit may have evolved slightly
@@ -58,7 +58,8 @@ Everything is licensed under V3 of the GPL.
 
 What this means is that you can use it freely for your own use, but if
 you distribute it to others you must abide by the terms of the
-license.
+license, which essentially says that you must include the same license
+and grant your users the same rights that you are being granted here.
 
 Share and Enjoy.
 
