@@ -378,11 +378,11 @@ the board is lost.  If this is not needed, Q3 can be ommitted.
 
 ## Changes History
 
-Revision 3 is the current version.
+Revision 3.0, 2024-03-27 is the current version.
 
-Revision 2 was the first, mostly working version.
+Revision 2.0 was the first released, mostly working, version.
 
-### Errata from Revision 2 
+### Errata from Revision 2.0
 
 Unfortunately, U1A would often switch momentarily low when power was
 lost, causing the power-supply to switch on if it was off at the time.
@@ -397,7 +397,7 @@ leading to damage of Q1's body diode.
 The feedback resistor on U1B was specified as 45M.  Since this is a value
 that is somewhat difficult to obtain, this has been replaced by 22M.
 
-### Other Changes from Revision 2 
+### Other Changes from Revision 2.0
 
 The board's dimensions have been changed.  The original dimensions
 fouled the Ethernet and USB connectors on many SBC boards, so the
@@ -406,8 +406,8 @@ layout has been significantly changed to avoid this.
 The supercapacitor board is now attached to the underside of the
 board, providing more room on top.
 
-The power MOSFETs are now mounted horizontally, to reduce the board's
-headroom requirements.
+The power MOSFETs and tall capacitors, are now mounted horizontally,
+to reduce the board's headroom requirements.
 
 Allowance for an optional buck-convertor board (B1) has been added.
 This can replace the 5V regulator made from discrete components.

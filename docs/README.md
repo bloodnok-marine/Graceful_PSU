@@ -34,7 +34,7 @@ from the version in the simulation.
 ### Circuit Diagram Image
 
 A rendered image of the kicad circuit diagram can be found in
-[`schematic.pdf`](../schematic.pdf) in the root directory.
+[`GracefulPSU.pdf`](../kicad/GracefulPSU.pdf) in the kicad directory.
 
 ### Gerber Files
 
