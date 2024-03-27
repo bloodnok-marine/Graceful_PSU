@@ -36,15 +36,17 @@ PROJECT_DIR = $(dir $(MAKEFILE))
 ALL_DIRS = docs kicad
 PANDOC = /usr/bin/pandoc
 
-PCBFILE_SUFFICES = B_Cu.gbr B_Mask.gbr B_Paste.gbr B_Silkscreen.gbr \
-		   Edge_Cuts.gbr F_Cu.gbr F_Mask.gbr F_Paste.gbr \
-		   F_Silkscreen.gbr job.gbrjob NPTH.drl \
-		   NPTH-drl_map.gbr PTH.drl PTH-drl_map.gbr
+PCBFILE_SUFFICES = B_Cu.gbl B_Mask.gbs B_Paste.gbp B_Silkscreen.gbo \
+		   Edge_Cuts.gm1 F_Cu.gtl F_Mask.gts F_Paste.gtp \
+		   F_Silkscreen.gto NPTH.drl NPTH-drl_map.gbr \
+		   PTH.drl PTH-drl_map.gbr
 
 KICAD_PROJECTFILE = $(wildcard $(PROJECT_DIR)/kicad/*.kicad_pro)
 KICAD_PROJECTNAME = $(subst .kicad_pro,,$(notdir $(KICAD_PROJECTFILE)))
 KICAD_PCBFILES = $(PCBFILE_SUFFICES:%=kicad/pcbfiles/$(KICAD_PROJECTNAME)-%)
 KICAD_SCHEMATIC_FILE = kicad/$(KICAD_PROJECTNAME).kicad_sch
+
+ZIPFILE = $(KICAD_PROJECTNAME).zip
 
 ###########
 # Verbosity control.  Define VERBOSE on the command line to show the
@@ -187,6 +189,18 @@ check_committed:
 
 
 ################################################################
+# zip
+#
+.PHONY:	zip
+
+zip:	check_schematic check_pcbfiles $(ZIPFILE)
+
+$(ZIPFILE): $(KICAD_PCBFILES)
+	@echo Creating $@
+	$(AT)cd kicad/pcbfiles; zip -u ../../$@ $(notdir $(KICAD_PCBFILES))
+
+
+################################################################
 # Clean (and tidy) targets
 #
 
@@ -210,7 +224,7 @@ do_tidy:
 
 clean:  do_tidy
 	@echo Removing generated files...
-	$(AT) rm -rf docs/*html 2>/dev/null || true
+	$(AT) rm -rf $(ZIPFILE) docs/*html 2>/dev/null || true
 	@echo Done
 
 
@@ -224,8 +238,8 @@ help:
 	@echo "  clean       - remove all generated, backup and target files"
 	@echo "  docs        - build doxygen documentation (into docs/html)"
 	@echo "  help        - list major makefile targets"
-	@echo "  pages       - release docs to github-pages (alias for gitdocs)"
 	@echo "  tidy        - remove all garbage files (such as emacs backups)"
+	@echo "  zip         - zip the pcbfiles for shipping to manufacturer"
 	@echo "\nTo increase feedback, define VERBOSE=y on the command line."
 	@echo "\nFor help fixing errors from the check target, define"
 	@echo "HELP=y on the command line."

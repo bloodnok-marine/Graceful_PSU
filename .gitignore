@@ -13,3 +13,9 @@ fp-info-cache
 
 # html files generated in the docs directory
 docs/*.html
+
+# Zipfile
+*.zip
+
+# pcbfiles
+kicad/pcbfiles
